@@ -1062,9 +1062,9 @@ public class Program extends AppCompatActivity {
             }
         }
         for (int i = 0; i < varObj.tabSundayTags.length; i++) {
-            if (varObj.tabSundayTags[i] == true) {
+            if (varObj.tabSundayTags[i] == false) {
                 varObj.adapterListViewSunday[i] = varObj.adapterListViewBackup[i] + "    (" + varObj.tabSundayText[i] + ")";
-                varObj.tabSundayTags[i] = false;
+                varObj.tabSundayTags[i] = true;
             }
         }
 
