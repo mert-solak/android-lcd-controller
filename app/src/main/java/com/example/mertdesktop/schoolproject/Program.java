@@ -1067,7 +1067,5 @@ public class Program extends AppCompatActivity {
                 varObj.tabSundayTags[i] = false;
             }
         }
-
-
     }
 }
