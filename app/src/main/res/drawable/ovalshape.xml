@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_create_white_24dp">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+            <corners android:radius="30dp" />
+            <stroke android:width="15px" android:color="#000000" />
+        </shape>
+    </item>
+</layer-list>

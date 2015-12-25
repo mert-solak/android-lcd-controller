@@ -1,0 +1,311 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.mertdesktop.schoolproject.Program"
+    android:background="#060606">
+
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tabHost"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/horizontalScrollView">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TabWidget>
+            </HorizontalScrollView>
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/tab_monday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Clear"
+                        android:id="@+id/tab_monday_button1"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/shape" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Add"
+                        android:id="@+id/tab_monday_button2"
+                        android:layout_above="@+id/tab_monday_button1"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/shape"
+                        android:singleLine="false" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tab_monday_edittext"
+                        android:layout_above="@+id/tab_monday_button2"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#ffffff" />
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tab_monday_listview"
+                        android:layout_above="@+id/tab_monday_edittext"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab_tuesday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CLEAR"
+                        android:id="@+id/tab_tuesday_button1"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/shape"
+                        android:layout_centerHorizontal="true" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ADD"
+                        android:id="@+id/tab_tuesday_button2"
+                        android:background="@drawable/shape"
+                        android:layout_above="@+id/tab_tuesday_button1"
+                        android:layout_centerHorizontal="true" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tab_tuesday_edittext"
+                        android:layout_above="@+id/tab_tuesday_button2"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#ffffff" />
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tab_tuesday_listview"
+                        android:layout_above="@+id/tab_tuesday_edittext"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tab_wednesday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CLEAR"
+                        android:id="@+id/tab_wednesday_button1"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/shape"
+                        android:layout_centerHorizontal="true" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ADD"
+                        android:id="@+id/tab_wednesday_button2"
+                        android:layout_above="@+id/tab_wednesday_button1"
+                        android:background="@drawable/shape"
+                        android:layout_centerHorizontal="true" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tab_wednesday_edittext"
+                        android:layout_above="@+id/tab_wednesday_button2"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#ffffff" />
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tab_wednesday_listview"
+                        android:layout_above="@+id/tab_wednesday_edittext"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/tab_thursday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CLEAR"
+                        android:id="@+id/tab_thursday_button1"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/shape"
+                        android:layout_centerHorizontal="true" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ADD"
+                        android:id="@+id/tab_thursday_button2"
+                        android:background="@drawable/shape"
+                        android:layout_above="@+id/tab_thursday_button1"
+                        android:layout_centerHorizontal="true" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tab_thursday_edittext"
+                        android:layout_above="@+id/tab_thursday_button2"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#ffffff" />
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tab_thursday_listview"
+                        android:layout_above="@+id/tab_thursday_edittext"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/tab_friday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CLEAR"
+                        android:id="@+id/tab_friday_button1"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/shape"
+                        android:layout_centerHorizontal="true" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ADD"
+                        android:id="@+id/tab_friday_button2"
+                        android:layout_above="@+id/tab_friday_button1"
+                        android:background="@drawable/shape"
+                        android:layout_centerHorizontal="true" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tab_friday_edittext"
+                        android:layout_above="@+id/tab_friday_button2"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#ffffff" />
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tab_friday_listview"
+                        android:layout_above="@+id/tab_friday_edittext"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/tab_saturday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CLEAR"
+                        android:id="@+id/tab_saturday_button1"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/shape"
+                        android:layout_centerHorizontal="true" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ADD"
+                        android:id="@+id/tab_saturday_button2"
+                        android:background="@drawable/shape"
+                        android:layout_above="@+id/tab_saturday_button1"
+                        android:layout_centerHorizontal="true" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tab_saturday_edittext"
+                        android:layout_above="@+id/tab_saturday_button2"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#ffffff" />
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tab_saturday_listview"
+                        android:layout_above="@+id/tab_saturday_edittext"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/tab_sunday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CLEAR"
+                        android:id="@+id/tab_sunday_button1"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/shape"
+                        android:layout_centerHorizontal="true" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="ADD"
+                        android:id="@+id/tab_sunday_button2"
+                        android:background="@drawable/shape"
+                        android:layout_above="@+id/tab_sunday_button1"
+                        android:layout_centerHorizontal="true" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tab_sunday_edittext"
+                        android:layout_above="@+id/tab_sunday_button2"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#ffffff" />
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tab_sunday_listview"
+                        android:layout_above="@+id/tab_sunday_edittext"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</RelativeLayout>

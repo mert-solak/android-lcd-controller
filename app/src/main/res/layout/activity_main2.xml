@@ -1,0 +1,446 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView">
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.mertdesktop.schoolproject.SettingsClass"
+    android:background="#060606">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember Past"
+        android:id="@+id/checkBox"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:contextClickable="false"
+        android:singleLine="false"
+        android:buttonTint="@color/switch_thumb_normal_material_light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="  Schedule Settings                                                                                                          "
+        android:id="@+id/textView"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:textColor="#d20c0c" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="  Send Button Settings                                                 "
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:textColor="#d20c0c" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Schedule"
+        android:id="@+id/checkBox2"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:buttonTint="@android:color/background_light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="  Location Settings                                                                "
+        android:id="@+id/textView3"
+        android:textStyle="bold"
+        android:layout_below="@+id/checkBox3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#d20c0c" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Message Deletion"
+        android:id="@+id/checkBox3"
+        android:layout_below="@+id/checkBox2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:buttonTint="@android:color/background_light" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Start Location Service   "
+        android:id="@+id/switch1"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false"
+        android:textColor="#ffffff" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/progressBar"
+        android:layout_alignTop="@+id/switch1"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Location Service Message : "
+        android:id="@+id/textView4"
+        android:textColor="#ffffff"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Empty"
+        android:id="@+id/textView5"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toRightOf="@+id/checkBox3"
+        android:layout_toEndOf="@+id/checkBox3" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/button"
+        android:background="@drawable/ovalshape"
+        android:layout_below="@+id/switch1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Tolerance :   "
+        android:id="@+id/textView6"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="5000"
+        android:id="@+id/textView7"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/button4"
+        android:background="@drawable/ovalshape"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="m"
+        android:id="@+id/textView8"
+        android:layout_centerVertical="true"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_toRightOf="@+id/textView7"
+        android:layout_toEndOf="@+id/textView7"
+        android:textColor="#ffffff" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Battery Consumption"
+        android:id="@+id/textView10"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/button4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="  Ftp Connection Settings                                                                                                                                          "
+        android:id="@+id/textView11"
+        android:textStyle="bold"
+        android:textColor="#d20c0c"
+        android:layout_below="@+id/seekBar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Domain: "
+        android:id="@+id/textView12"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/progressBar3"
+        android:visibility="invisible"
+        android:layout_below="@+id/textView11"
+        android:layout_toLeftOf="@+id/button5"
+        android:layout_toStartOf="@+id/button5" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/imageView"
+        android:layout_alignTop="@+id/progressBar3"
+        android:layout_alignLeft="@+id/progressBar3"
+        android:layout_alignStart="@+id/progressBar3" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/imageView3"
+        android:layout_alignTop="@+id/progressBar"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/imageView4"
+        android:layout_above="@+id/button7"
+        android:layout_toLeftOf="@+id/button6"
+        android:layout_toStartOf="@+id/button6" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/progressBar4"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_toLeftOf="@+id/button6"
+        android:layout_toStartOf="@+id/button6" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Domain Name"
+        android:id="@+id/textView13"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/textView12"
+        android:layout_toRightOf="@+id/textView12"
+        android:layout_toLeftOf="@+id/progressBar3"
+        android:layout_toStartOf="@+id/progressBar3" />
+    android:layout_alignTop="@+id/textView12"
+    android:layout_toRightOf="@+id/textView12"
+    android:layout_toEndOf="@+id/textView12"
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/button5"
+        android:background="@drawable/ovalshape"
+        android:layout_below="@+id/textView11"
+        android:layout_alignLeft="@+id/progressBar"
+        android:layout_alignStart="@+id/progressBar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Username: "
+        android:id="@+id/textView14"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/button5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="User Name"
+        android:id="@+id/textView15"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/textView14"
+        android:layout_toRightOf="@+id/textView14"
+        android:layout_toLeftOf="@+id/progressBar3"
+        android:layout_toStartOf="@+id/progressBar3" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/button6"
+        android:background="@drawable/ovalshape"
+        android:layout_below="@+id/textView13"
+        android:layout_alignRight="@+id/textView11"
+        android:layout_alignEnd="@+id/textView11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Password: "
+        android:id="@+id/textView16"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Password"
+        android:id="@+id/textView17"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView14"
+        android:layout_alignTop="@+id/textView16"
+        android:layout_toRightOf="@+id/textView16"
+        android:layout_toLeftOf="@+id/imageView4"
+        android:layout_toStartOf="@+id/imageView4" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/button7"
+        android:background="@drawable/ovalshape"
+        android:layout_alignBottom="@+id/textView17"
+        android:layout_toRightOf="@+id/imageView4"
+        android:layout_toEndOf="@+id/imageView4" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/progressBar5"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/button7"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView4" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/imageView5"
+        android:layout_alignTop="@+id/progressBar5"
+        android:layout_alignLeft="@+id/progressBar5"
+        android:layout_alignStart="@+id/progressBar5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="File Name:"
+        android:id="@+id/textView18"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/button8"
+        android:background="@drawable/ovalshape"
+        android:layout_alignTop="@+id/textView20"
+        android:layout_toRightOf="@+id/progressBar5"
+        android:layout_toEndOf="@+id/progressBar5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Path: "
+        android:id="@+id/textView19"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView18"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/button9"
+        android:background="@drawable/folder_icon"
+        android:layout_below="@+id/textView18"
+        android:layout_toRightOf="@+id/progressBar5"
+        android:layout_toEndOf="@+id/progressBar5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="File Name"
+        android:id="@+id/textView20"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/textView18"
+        android:layout_toRightOf="@+id/textView16"
+        android:layout_alignRight="@+id/progressBar5"
+        android:layout_alignEnd="@+id/progressBar5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Path"
+        android:id="@+id/textView21"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/textView19"
+        android:layout_toRightOf="@+id/textView19"
+        android:layout_alignRight="@+id/textView20"
+        android:layout_alignEnd="@+id/textView20" />
+
+</RelativeLayout>
+</ScrollView>
+
+

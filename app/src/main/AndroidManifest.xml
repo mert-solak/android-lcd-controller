@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mertdesktop.schoolproject" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/lcd"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingsClass"
+            android:label="@string/setting" >
+            <intent-filter>
+                <action android:name="com.example.mertdesktop.schoolproject.SettingsClass" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Program"
+            android:label="@string/title_activity_program" >
+            <intent-filter>
+                <action android:name="com.example.mertdesktop.schoolproject.Program" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ListChangePopUp"
+            android:theme="@style/AppTheme.CustomTheme" />
+
+        <service
+            android:name=".Service"
+            android:exported="false" />
+        <service
+            android:name=".NotificationClass"
+            android:exported="false"
+            android:label="@string/title_activity_notification" >
+            <intent-filter>
+                <action android:name="com.example.mertdesktop.schoolproject.Notification" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            >
+        </service>
+        <service
+            android:name=".FTPService"
+            android:exported="false"
+            android:label="@string/title_ftpservice" >
+            <intent-filter>
+                <action android:name="com.example.mertdesktop.schoolproject.FTPService" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            >
+        </service>
+        <service
+            android:name=".NotificationEmptyClass"
+            android:exported="false"
+            android:label="@string/title_activity_notification" >
+            <intent-filter>
+                <action android:name="com.example.mertdesktop.schoolproject.Notification" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            >
+        </service>
+        <service
+            android:name=".LocationClass"
+            android:exported="false"
+            android:label="@string/title_locationclass_service" >
+            <intent-filter>
+                <action android:name="com.example.mertdesktop.schoolproject.LocationClass" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            >
+        </service>
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FTPPathFinder"
+            android:theme="@style/AppTheme.CustomTheme"/>
+        <receiver android:name=".NetWorkListener"
+            android:label="NetWorkListener">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

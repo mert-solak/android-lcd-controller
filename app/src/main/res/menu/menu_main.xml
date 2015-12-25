@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="3" app:showAsAction="always"
+        android:icon="@drawable/settingswh_m"/>
+    <item android:id="@+id/action_remove" android:title="@string/action_remove"
+        android:orderInCategory="2" app:showAsAction="always"
+        android:icon="@drawable/remove_m"/>
+    <item android:id="@+id/action_program" android:title="@string/action_program"
+        android:orderInCategory="1" app:showAsAction="always"
+        android:icon="@drawable/assigment_m"/>
+</menu>
